@@ -1,0 +1,15 @@
+/Users/ricardorosa/Documents/projects_.net/Dice_roler_app/Dice_roler_app/bin/Debug/net7.0/Dice_roler_app
+/Users/ricardorosa/Documents/projects_.net/Dice_roler_app/Dice_roler_app/bin/Debug/net7.0/Dice_roler_app.deps.json
+/Users/ricardorosa/Documents/projects_.net/Dice_roler_app/Dice_roler_app/bin/Debug/net7.0/Dice_roler_app.runtimeconfig.json
+/Users/ricardorosa/Documents/projects_.net/Dice_roler_app/Dice_roler_app/bin/Debug/net7.0/Dice_roler_app.dll
+/Users/ricardorosa/Documents/projects_.net/Dice_roler_app/Dice_roler_app/bin/Debug/net7.0/Dice_roler_app.pdb
+/Users/ricardorosa/Documents/projects_.net/Dice_roler_app/Dice_roler_app/obj/Debug/net7.0/Dice_roler_app.csproj.AssemblyReference.cache
+/Users/ricardorosa/Documents/projects_.net/Dice_roler_app/Dice_roler_app/obj/Debug/net7.0/Dice_roler_app.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ricardorosa/Documents/projects_.net/Dice_roler_app/Dice_roler_app/obj/Debug/net7.0/Dice_roler_app.AssemblyInfoInputs.cache
+/Users/ricardorosa/Documents/projects_.net/Dice_roler_app/Dice_roler_app/obj/Debug/net7.0/Dice_roler_app.AssemblyInfo.cs
+/Users/ricardorosa/Documents/projects_.net/Dice_roler_app/Dice_roler_app/obj/Debug/net7.0/Dice_roler_app.csproj.CoreCompileInputs.cache
+/Users/ricardorosa/Documents/projects_.net/Dice_roler_app/Dice_roler_app/obj/Debug/net7.0/Dice_roler_app.dll
+/Users/ricardorosa/Documents/projects_.net/Dice_roler_app/Dice_roler_app/obj/Debug/net7.0/refint/Dice_roler_app.dll
+/Users/ricardorosa/Documents/projects_.net/Dice_roler_app/Dice_roler_app/obj/Debug/net7.0/Dice_roler_app.pdb
+/Users/ricardorosa/Documents/projects_.net/Dice_roler_app/Dice_roler_app/obj/Debug/net7.0/Dice_roler_app.genruntimeconfig.cache
+/Users/ricardorosa/Documents/projects_.net/Dice_roler_app/Dice_roler_app/obj/Debug/net7.0/ref/Dice_roler_app.dll
