@@ -1,55 +1,100 @@
 ﻿using System;
 
-namespace Dice_roller_app
+namespace DiceRollerApp
 {
-    // Define the main program class
     class Program
     {
-        // Define the Main method, the entry point of the program
         static void Main(string[] args)
         {
-            // Declare variables to store the random numbers for player and opponent
-            
-            // Initialize player and opponent points to zero
-            
-            // Create a Random object to generate random numbers
-            
+            Console.WriteLine("Welcome to the Dice Roller App!");
 
-            // Loop to simulate 10 rounds of dice rolls
-           
-                // Prompt the user to press any key to roll the dice
-                
+            bool keepPlaying = true;
 
-                // Generate a random number between 1 and 6 for the player
-               
+            while (keepPlaying)
+            {
+                PlayGame();
+                keepPlaying = AskToPlayAgain();
+            }
 
-                // Simulate a delay to create suspense
-               
+            Console.WriteLine("Thank you for playing. Goodbye!");
+        }
 
-                // Display the player's roll result
-               
+        static void PlayGame()
+        {
+            int playerPoints = 0;
+            int opponentPoints = 0;
+            Random random = new Random();
 
-                // Generate a random number between 1 and 6 for the opponent
-               
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine("Press any key to roll the dice!");
+                Console.ReadKey();
 
-                // Display the opponent's roll result
-               
+                int playerRandomNum = RollDice(random);
+                Console.WriteLine("You rolled a " + playerRandomNum);
 
-                // Determine the round winner and update points accordingly
-                
-                    // Increment player points if player wins
-                   // Increment opponent points if opponent wins
-                    
-                    // Declare a draw if both rolls are equal
-                   
-                // Display the current score
-               
+                int opponentRandomNum = RollDice(random);
+                Console.WriteLine("Opponent rolled a " + opponentRandomNum);
 
-            // Determine and display the final winner after 10 rounds
-            
-            // Wait for a final key press before exiting
-           
+                UpdatePoints(playerRandomNum, opponentRandomNum, ref playerPoints, ref opponentPoints);
+                DisplayCurrentScore(playerPoints, opponentPoints);
+            }
+
+            DisplayFinalWinner(playerPoints, opponentPoints);
+        }
+
+        static int RollDice(Random random)
+        {
+            Console.WriteLine("....");
+            System.Threading.Thread.Sleep(1000);
+            return random.Next(1, 7);
+        }
+
+        static void UpdatePoints(int playerRandomNum, int opponentRandomNum, ref int playerPoints, ref int opponentPoints)
+        {
+            if (playerRandomNum > opponentRandomNum)
+            {
+                playerPoints++;
+                Console.WriteLine("Player wins this round");
+            }
+            else if (opponentRandomNum > playerRandomNum)
+            {
+                opponentPoints++;
+                Console.WriteLine("Opponent wins this round");
+            }
+            else
+            {
+                Console.WriteLine("Draw!");
+            }
+        }
+
+        static void DisplayCurrentScore(int playerPoints, int opponentPoints)
+        {
+            Console.WriteLine($"The score is now - Player: {playerPoints} Opponent: {opponentPoints}");
+            Console.WriteLine();
+        }
+
+        static void DisplayFinalWinner(int playerPoints, int opponentPoints)
+        {
+            if (playerPoints > opponentPoints)
+            {
+                Console.WriteLine("You are the winner!");
+            }
+            else if (playerPoints < opponentPoints)
+            {
+                Console.WriteLine("You are the loser!");
+            }
+            else
+            {
+                Console.WriteLine("It's a draw!");
+            }
+        }
+
+        static bool AskToPlayAgain()
+        {
+            Console.WriteLine("Do you want to play again? (y/n)");
+            string response = Console.ReadLine().ToLower();
+            return response == "y";
         }
     }
 }
-
